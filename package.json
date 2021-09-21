@@ -4,9 +4,10 @@
   "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "__prebuild__": "yarn build:clean",
-    "__build:clean__": "cd dist && rm -rf `ls | grep -v \"LICENSE\\|package.json\\|README.md\"`",
+    "prebuild": "yarn build:clean",
+    "build:clean": "cd dist && rm -rf `ls | grep -v \"LICENSE\\|package.json\\|README.md\"`",
     "build": "npx tsc -b tsconfig.build.json",
     "commit": "npx git-cz",
     "lint": "npx tslint 'src/*.ts'",
