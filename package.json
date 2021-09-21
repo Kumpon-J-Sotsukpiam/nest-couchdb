@@ -3,6 +3,7 @@
   "description": "CouchDB module for Nest framework",
   "version": "0.1.0",
   "license": "MIT",
+  "main": "dist/index.js",
   "scripts": {
     "__prebuild__": "yarn build:clean",
     "__build:clean__": "cd dist && rm -rf `ls | grep -v \"LICENSE\\|package.json\\|README.md\"`",
@@ -53,7 +54,6 @@
     "typescript": "4.4.3",
     "validate-commit-msg": "2.14.0"
   },
-  "main": "jest.config.js",
   "directories": {
     "test": "test"
   },
