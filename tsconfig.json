@@ -11,6 +11,17 @@
     "target": "es2017",
     "sourceMap": true,
     "allowJs": false,
-    "skipLibCheck": false
-  }
+    "skipLibCheck": false,
+    "outDir": "dist",
+    "lib": [
+      "es2017",
+      "es7",
+      "es6",
+      "dom"
+    ],
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

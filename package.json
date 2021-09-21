@@ -1,13 +1,14 @@
 {
   "name": "@tetravaal-kjs/nest-couchdb",
   "description": "CouchDB module for Nest framework",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "prebuild": "yarn build:clean",
-    "build:clean": "cd dist && rm -rf `ls | grep -v \"LICENSE\\|package.json\\|README.md\"`",
+    "prepublish": "npx tsc -b tsconfig.build.json",
+    "__prebuild": "yarn build:clean",
+    "__build:clean": "cd dist && rm -rf `ls | grep -v \"LICENSE\\|package.json\\|README.md\"`",
     "build": "npx tsc -b tsconfig.build.json",
     "commit": "npx git-cz",
     "lint": "npx tslint 'src/*.ts'",

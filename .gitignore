@@ -61,7 +61,7 @@ typings/
 .next
 
 # Build
-dist/*
-!dist/package.json
-!dist/README.md
-!dist/LICENSE
+# dist/*
+# !dist/package.json
+# !dist/README.md
+# !dist/LICENSE
